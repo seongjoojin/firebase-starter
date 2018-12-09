@@ -27,3 +27,9 @@ AWS (Amazon Web Service)
 Cloud (Firebase)
 
 모든 관리를 구글이 다함, 사용자는 배포만 하면 됨.
+
+## 커스텀 도메인
+
+https://domain.whois.co.kr/regist/dom.php
+
+위 사이즈에서 도메인 제공 받고 연결
