@@ -30,6 +30,16 @@ Cloud (Firebase)
 
 ## 커스텀 도메인
 
+https://templated.co/
+
 https://domain.whois.co.kr/regist/dom.php
 
 위 사이즈에서 도메인 제공 받고 연결
+
+## auth
+
+authentication에서 승인된 도메인 체크, 오른쪽 상단의 웹설정가면 auth 설정에 필요한 것이 되어있음.
+
+https://firebase.google.com/docs/web/setup?authuser=0
+
+https://www.creative-tim.com
