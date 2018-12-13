@@ -43,3 +43,21 @@ authentication에서 승인된 도메인 체크, 오른쪽 상단의 웹설정�
 https://firebase.google.com/docs/web/setup?authuser=0
 
 https://www.creative-tim.com
+
+## Firebase DB 이해
+
+
+관계형 데이터베이스 (MySQL, ORACLE)
+
+1. 물리적 Table Data 정의
+2. Table(Binary)기반 Data 조작
+3. Table(Binary)기반 Data 제어
+4. SQL 사용
+
+비관계형 데이터베이스 (Firebase Realtime Database)
+
+1. Json Tree node 정의
+2. Json(Text)기반 Data 조작
+3. Json(Text)기반 Data 제어
+4. NoSQL 사용
+
