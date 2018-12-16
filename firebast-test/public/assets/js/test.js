@@ -21,7 +21,20 @@ function loadpost() {
 		ref.orderByChild('uid').equalTo(user.uid).limitToLast(1).once('value', function (data) {
 			data.forEach(function (sdata) {
 				$("#message").val(sdata.val().contents)
+				$("#message").attr('key',sdata.key)
 			})
 		});
+	}
+}
+
+function update() {
+	var _key = $("#message").attr('key')
+	var user = firebase.auth().currentUser;
+	if (user) {
+		var ref = firebase.database().ref('post/' + _key + "/");
+		var udata = {
+			contents: $("#message").val(), newvalue: ''
+		};
+		ref.update(udata);
 	}
 }
