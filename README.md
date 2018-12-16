@@ -61,3 +61,10 @@ https://www.creative-tim.com
 3. Json(Text)기반 Data 제어
 4. NoSQL 사용
 
+## Firebase DB 규칙
+
+https://firebase.google.com/docs/database/security/?authuser=0
+
+## Firebase DB 쿼리
+
+https://firebase.google.com/docs/database/web/lists-of-data?authuser=0
