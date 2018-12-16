@@ -44,6 +44,18 @@ https://firebase.google.com/docs/web/setup?authuser=0
 
 https://www.creative-tim.com
 
+### auth 비밀번호 계정
+
+https://firebase.google.com/docs/auth/web/password-auth?authuser=0
+
+### auth facebook 로그인 
+
+https://firebase.google.com/docs/auth/web/facebook-login?authuser=0
+
+### auth 구글 로그인
+
+https://firebase.google.com/docs/auth/web/google-signin?authuser=0
+
 ## Firebase DB 이해
 
 
@@ -68,3 +80,18 @@ https://firebase.google.com/docs/database/security/?authuser=0
 ## Firebase DB 쿼리
 
 https://firebase.google.com/docs/database/web/lists-of-data?authuser=0
+
+## Firebase DB 업데이트, 삭제
+
+https://firebase.google.com/docs/database/web/read-and-write?authuser=0#updating_or_deleting_data
+
+### Firebase DB를 잘 사용하는 방법
+
+1. Node key에 “/” 가 들어가선 안됨
+2. Set과 Update는 분리해서 사용할 것
+3. Query는 비동기로 작동함
+4. Listening 은 필요할 때만 . 필요하지 않을 때는 once로 (불필요한 리소스)
+5. Root node는 최대한 목적에 맞게 그룹화
+6. Data는 최대한 분산
+7. Index 활용 최대화
+8. Image는 Base64보다는 Storage URL로

@@ -1,7 +1,9 @@
 function newpost() {
-	var user = firebase.auth().currentUser; if (user) {
+	var user = firebase.auth().currentUser;
+	if (user) {
 		var d = new Date();
-		var newPostKey = firebase.database().ref().child("post/").push().key; firebase.database().ref("post/" + newPostKey)
+		var newPostKey = firebase.database().ref().child("post/").push().key;
+		firebase.database().ref("post/" + newPostKey)
 				.set({
 					uid: user.uid,
 					createdAt: d.getTime(),
@@ -28,13 +30,43 @@ function loadpost() {
 }
 
 function update() {
-	var _key = $("#message").attr('key')
+	// var _key = $("#message").attr('key')
+	// var user = firebase.auth().currentUser;
+	// if (user) {
+	// 	var ref = firebase.database().ref('post/' + _key + "/");
+	// 	var udata = {
+	// 		contents: $("#message").val(), newvalue: ''
+	// 	};
+	// 	ref.update(udata);
+	// }
 	var user = firebase.auth().currentUser;
 	if (user) {
-		var ref = firebase.database().ref('post/' + _key + "/");
-		var udata = {
-			contents: $("#message").val(), newvalue: ''
-		};
-		ref.update(udata);
+		var d = new Date();
+		// var newPostKey = firebase.database().ref().child("post/").push().key;
+		var _key = $("#message").attr('key')
+		firebase.database().ref("post/" + _key)
+				.set({
+					uid: user.uid,
+					createdAt: d.getTime(),
+					reverseCreatedAt: -d.getTime(),
+					contents: $("#message").val()
+				})
+				.then(function (result) {
+					alert("Sucess")
+				});
+	}
+}
+
+function deletepost() {
+	var user = firebase.auth().currentUser;
+	if (user) {
+		var _key = $("#message").attr('key')
+		var ref = firebase.database().ref("post/" + _key + "/");
+		ref.remove()
+				.then(function () {
+					alert('Success');
+				})
+				.catch(function (error) {
+					console.log("Remove failed: " + error.message); });
 	}
 }
