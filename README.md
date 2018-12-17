@@ -95,3 +95,7 @@ https://firebase.google.com/docs/database/web/read-and-write?authuser=0#updating
 6. Data는 최대한 분산
 7. Index 활용 최대화
 8. Image는 Base64보다는 Storage URL로
+
+## Firebase Storage
+
+https://firebase.google.com/docs/storage/web/start?authuser=0#set_up

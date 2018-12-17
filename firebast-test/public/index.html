@@ -89,7 +89,7 @@
         <div class="grid-style">
           <div>
             <div class="box">
-              <div class="image fit"><img src="images/pic02.jpg" alt="" /></div>
+              <div class="image fit"><img id="myimg" src="images/pic02.jpg"  alt="" /></div>
               <div class="content">
                 <header class="align-center">
                   <p>maecenas sapien feugiat ex purus</p>
@@ -102,7 +102,8 @@
                   quis volutpat lacus placerat malesuada.
                 </p>
                 <footer class="align-center">
-                  <a href="#" class="button alt">Learn More</a>
+									<a onclick="uploadimage()" class="button alt">Upload Image</a>
+									<input type="file" id="fileinput" style="display: none">
                 </footer>
               </div>
             </div>
@@ -225,6 +226,8 @@
     <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-functions.js"></script>
     <!-- Comment out (or don't include) services that you don't want to use -->
     <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-storage.js"></script>
+    <script src="assets/js/init.js"></script>
+		<script src="assets/js/test.js"></script>
     <script src="assets/js/auth.js"></script>
   </body>
 </html>
