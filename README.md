@@ -109,3 +109,23 @@ Back-end Server단에서 할 수 있는 일을 하게 해줌.
 - Email Server 송신
 
 https://firebase.google.com/docs/functions/get-started?authuser=0
+
+### 이메일 송신 및 Cron job 소개
+
+https://github.com/wonism/TIL/tree/master/back-end/nodejs/nodemailer-example
+
+### JavaScript 암호화
+
+https://javascriptobfuscator.com/Javascript-Obfuscator.aspx
+
+### Cron Job
+
+https://cron-job.org/en/
+
+https://www.setcronjob.com/prices
+
+### Web App Publish
+
+https://www.appsgeyser.com/
+
+https://play.google.com/apps/publish/signup/
