@@ -99,3 +99,13 @@ https://firebase.google.com/docs/database/web/read-and-write?authuser=0#updating
 ## Firebase Storage
 
 https://firebase.google.com/docs/storage/web/start?authuser=0#set_up
+
+## Firebase Cloud함수
+
+Back-end Server단에서 할 수 있는 일을 하게 해줌.
+
+- Cron Job DB 조작
+- 외부 에서 API 수신, DB 조작
+- Email Server 송신
+
+https://firebase.google.com/docs/functions/get-started?authuser=0
