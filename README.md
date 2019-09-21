@@ -1,5 +1,7 @@
 # firebase-starter
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/seongjoojin/firebase-starter.svg)](https://greenkeeper.io/)
+
 인프런 Firebase 강의 정리
 
 ## 웹서비스에 대한 이해
