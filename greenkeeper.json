@@ -1,0 +1,9 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "firebase-function/functions/package.json"
+      ]
+    }
+  }
+}
